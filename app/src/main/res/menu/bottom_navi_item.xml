@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/home"
+    android:title="Home"
+    android:icon="@drawable/ic_action_name"/>
+<item
+    android:id="@+id/bus"
+    android:title="Bus"
+    android:icon="@drawable/ic_bus"/>
+<item
+    android:id="@+id/erp"
+    android:title="Erp"
+    android:icon="@drawable/ic_erp"/>
+<item
+    android:id="@+id/social"
+    android:title="Social"
+    android:icon="@drawable/ic_social"/>
+<item
+    android:id="@+id/library"
+    android:title="Library"
+    android:icon="@drawable/ic_library"/>
+</menu>

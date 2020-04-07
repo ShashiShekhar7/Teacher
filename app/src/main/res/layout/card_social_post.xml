@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    android:padding="5dp"
+    android:layout_marginBottom="1dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<!--    header linear layout-->
+    <LinearLayout
+        android:elevation="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/poster_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_launcher_background"
+            app:civ_border_color="@android:color/black"
+            app:civ_border_width="1dp" />
+        <LinearLayout
+            android:id="@+id/profile_frag"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/poster_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dinesh Kumar"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/poster_cllg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UCER Allahabad"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_more_vert_black_30dp"
+                android:background="@android:color/transparent"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+
+<!--    post title text view-->
+    <TextView
+        android:id="@+id/title_of_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Title of post"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold" />
+
+<!--    Image view-->
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+    </ImageView>
+<!--    Video view-->
+    <VideoView
+        android:id="@+id/post_video"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+    </VideoView>
+<!--    Text view -->
+    <TextView
+        android:id="@+id/post_text"
+        android:ellipsize="end"
+        android:textSize="25dp"
+        android:text="Hi I am dinesh kumar maurya ok"
+        android:maxLines="3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@android:color/darker_gray"/>
+<!--    Likes comments save icons linear layout-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:elevation="4dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_favorite" />
+
+        <ImageButton
+            android:focusable="true"
+            android:backgroundTint="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_comment" />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_save" />
+    </LinearLayout>
+
+    <TextView
+
+        android:textSize="10dp"
+        android:id="@+id/no_of_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="100 likes"
+        android:textColor="@android:color/black"
+         />
+
+    <TextView
+        android:textSize="10dp"
+        android:id="@+id/no_of_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="100 comments"
+        android:textColor="@android:color/black"
+        />
+</LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "334933821022",
+    "firebase_url": "https://teacher-c342a.firebaseio.com",
+    "project_id": "teacher-c342a",
+    "storage_bucket": "teacher-c342a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334933821022:android:7095739679caf6b714d6cf",
+        "android_client_info": {
+          "package_name": "com.example.teacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334933821022-d6psdf7avpbp3g2hdatic0gs1qbenrig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj4aykRCoYiUNInk9M7s3U26TpDWHfn8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334933821022-d6psdf7avpbp3g2hdatic0gs1qbenrig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

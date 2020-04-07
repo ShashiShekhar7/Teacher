@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/post_card"
+    android:layout_margin="1dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:id="@+id/image_post"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher_background"/>
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/video_post"
+            />
+
+
+    <TextView
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:scrollHorizontally="true"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:id="@+id/text_post"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/app_name"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+</androidx.cardview.widget.CardView>
